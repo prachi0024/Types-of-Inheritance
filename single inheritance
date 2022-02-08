@@ -1,0 +1,24 @@
+package inheritance;
+class Calculation
+{
+	int result;
+	public void addition(int a, int b);
+	{
+		result = a + b;
+		System.out.println("Result after addition is="+ result);
+	}
+	public void substraction(int a, int b);
+	{
+		result= a - b;
+		System.out.println("Result after substraction is="+ result);
+	}
+}
+public class Main extends Calculation {
+
+	public static void main(String[] args) {
+		Main obj = new Main();
+		obj.addition(10, 20);
+		obj.substraction(12, 10);
+
+	}
+}
