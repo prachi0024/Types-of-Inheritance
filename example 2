@@ -1,0 +1,24 @@
+class A
+{
+public string str;
+str="hello";
+}
+class B extends A
+{
+str = str.concat("I am");
+}
+class C extends B
+{
+str= str.concat("prachi");
+public void display()
+{
+system.out.println(str);
+}
+}
+class sample
+{
+public static void main(string[] args){
+ C obj = new c();
+ obj.display();
+ }
+ }
